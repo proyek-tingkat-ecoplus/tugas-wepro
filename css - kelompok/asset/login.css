@@ -1,0 +1,181 @@
+body {
+    background-color: #003030;
+    margin: auto;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    /*  buat center div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    background-color: white;
+    /* buat set max width , width % ambil dari max */
+    max-width: 800px; 
+    width: 80%;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    
+}
+
+/* section content */
+.card > .content-section {
+    padding:25px;
+}
+
+.card > .content-section > img {
+    max-width: 250px;
+    padding: 40px;
+    border-radius: 50px;
+}
+.vertical-line {
+    border-left: 2px solid #000; 
+    height: 400px; 
+    margin: 60px 10px; 
+}
+/* end section */
+
+/* section input */
+.card > .input-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    margin-top: 5%;
+}
+
+.card > .input-section > .title{
+    color: #003030;
+    font-weight: bolder;
+}
+
+.card > .input-section > .form-group{
+    width: 65%;
+    padding-bottom: 10px;
+}
+.card > .input-section > .form-group > .input-group{
+    display: flex;
+}
+
+.card > .input-section > .form-group > .input-group > .icon{
+    border-bottom: 1px solid grey;
+    padding-top: 35px;
+}
+
+
+.card>.input-section>.form-group > .input-group >input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top:20px;
+    margin-left: 10px;
+    height: 40px;
+}
+
+
+/* .card>.input-section>.form-group>.input-group > input::placeholder{
+    padding: 20px;
+} */
+
+/* line */
+.card > .input-section > .line{
+    width: 65%;
+    text-align: center;
+    border-bottom: 1px solid #003030;
+    line-height: 0.1em; /* ini buat line nya */
+    margin: 20px 0 15px;
+}
+
+.card > .input-section > .line > span{
+    background-color: #ffff;
+    padding: 0 10px;
+    font-size: 10px;
+}
+/* endline */
+/* start button */
+.card > .input-section > button{
+    margin-top: 10px;
+    width: 65%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    filter: drop-shadow(grey 3px 3px 3px)
+}
+
+.card > .input-section > .form-group > button:first-of-type{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    filter: drop-shadow(grey 3px 3px 3px);
+    background-color: #003030;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid #003030;
+}
+
+.card > .input-section > button:nth-of-type(1){
+    background-color: #FA1F0C;
+    color: #ffff;
+    text-transform: capitalize;
+}
+.card > .input-section > button > .icon-button{
+    margin-right: 10px;
+}
+
+.card > .input-section > button:nth-of-type(2){
+    background-color: #1877F2;
+    color: #ffff;
+    text-transform: capitalize;
+    border: 1px solid #1877F2;
+}
+/* end button */
+/* botton section */
+.card > .input-section > .bottom-section > div{
+    text-align: center;
+    margin-top: 5px;
+    color: #003030;
+}
+.card > .input-section > .bottom-section > div>a{
+    color: #003030;
+    font-weight: bold;
+}
+/* end bottom section */
+/* end input section */
+
+/* rbuat */
+@media screen  and  (max-width:768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .vertical-line  {
+        display: none;
+    }
+
+    .input-section {
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+
+    .content-section img{
+        display: none;
+    }
+    .card > .input-section{
+        width: 100%;
+    }
+
+    .card > .input-section > button , .card > .input-section > .bottom-section > div{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,40 @@
+body {
+    background-color: #003030;
+    margin: auto;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    border-radius: 20px;
+    background-color: white;
+    margin: 10%;
+    padding: 3% 10% 3% 10%;
+}
+
+.container > .table_input > tbody > tr >td  {
+    width: 200px;
+}
+
+.container > h1 {
+    color: #003030;
+}
+.container > .table_input > tbody > tr >td:last-of-type > select  {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 5px;
+}
+
+.container > .table   {
+    overflow-x: auto;
+}
+
+.container > .table > table{
+    border-collapse: collapse;
+}
+
+.table >table , .table th , .table td {
+    border: 1px solid #003030;
+}

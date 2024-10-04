@@ -1,0 +1,84 @@
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif; /* Avoid horizontal scroll */
+    margin: 0; /* Avoid default margin for body */
+}
+
+nav {
+    background-color: #4CA771;
+}
+
+ol {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    flex-wrap: wrap;
+}
+
+ol > li:last-child {
+    margin-left: auto;
+    margin-right: 20px; /* Ensure a small gap to the right */
+}
+
+ol > li > a {
+    margin-left: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0 20px 20px;
+    display: inline-block;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+ol > li > a:hover {
+    color: #003030;
+}
+
+ol > li > span {
+    color: #003030;
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+.main{
+    padding: 30px;
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 90%; /* Adjust the width of the .main element for smaller screens */
+        padding: 20px; /* Optionally adjust the padding */
+    }
+
+}
+
+.main >h2 , .main >h3 {
+    color: #003030;
+}
+
+.main button{
+    width: 100px;
+    padding: 10px;
+    background-color: #4CA771;
+    border: none;
+}
+
+.main button > a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+.main button:hover{
+    background-color: #003030;
+    
+}
+
