@@ -2,6 +2,7 @@ body {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif; /* Avoid horizontal scroll */
     margin: 0; /* Avoid default margin for body */
+    background-color: #f0f0f0;
 }
 
 nav {
@@ -48,13 +49,16 @@ ol > li > span {
 
 
 .main{
+    max-width: 800px;
+    margin: 2%;
+    background-color: #ffff ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    width: 40%;
 }
 
 @media screen and (max-width: 768px) {
     .main {
-        width: 90%; /* Adjust the width of the .main element for smaller screens */
+        width: 85%; /* Adjust the width of the .main element for smaller screens */
         padding: 20px; /* Optionally adjust the padding */
     }
 

@@ -3,103 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EcoPulse - Input Data</title>
+    <link rel="stylesheet" href="asset/menu.css">
+    <link rel="stylesheet" href="asset/input.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Login</h1>
-    <br>
-    <form action="menuview.html">
-    <table>
-        <tr>
-            <td><label for="nama_id">Nama </label></td>
-            <td><input type="nama" name="nama_input" id="nama_id"></td>
-        </tr>
-        <tr>
-            <div class="form-group">
-                <td><label for="nim_id">NIM </label></td>
-                <td><input type="nim" name="nim_input" id="nim_id"></td>
-            </div>
-        </tr>
-        <tr>
-            <div class="form-group">
-                <td><label for="kelas_id">Kelas </label></td>
-                <td><input type="kelas" name="kelas_input" id="kelas_id"></td>
-            </div>
-        </tr>
-        <tr>
-            <td><label for="jk_id">Gender </label></td>
-            <td>
-                <div>
-                <input type="radio" name="jk_input" id="pria" value="Pria">
-                <label for="pria">L</label>
-            </div>
-            <div>
-                <input type="radio" name="jk_input" id="wanita" value="Wanita">
-                <label for="wanita">P</label>
-            </div>
-        </td>
-        </tr>
-        <tr>
-            <td>
-            <div>
-                <label for="ttl">Tempat/Tanggal Lahir</label>
-                  
-            </div>
-            </td>
-            <td>
-                <select name="ttl" id="ttl">
-                    <option value="bdg">Bandung</option>
-                    <option value="jkt">Jakarta</option>
-                    <option value="solo">Solo</option>
-                    <option value="ikn">IKN</option>
-                </select> 
-                <input type="date" id="birthday" name="birthday">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <label for="minat">Minat</label>
-                      
+    <nav>
+        <ol>
+            <li><a href="menu.html"><Span>EcoPulse</Span></a></li>
+            <li><a href="input.html" class="active">Input</a></li>
+            <li><a href="menuview.html">View</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user icon"></i>Logout</a></li>
+        </ol>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h1>Input Your Data</h1>
+            <form action="menuview.html" class="form-in">
+                <div class="form-group">
+                    <label for="nama_id">Name</label>
+                    <input type="text" name="nama_input" id="nama_id" required>
                 </div>
-                </td>
-            <td>
-                <div>
-                    <input type="checkbox" name="hobi_input" id="programming" value="programming">
-                    <label for="programming">Programming</label>
+                <div class="form-group">
+                    <label for="nim_id">NIM</label>
+                    <input type="text" name="nim_input" id="nim_id" required>
                 </div>
-                <div>
-                    <input type="checkbox" name="hobi_input" id="matematika" value="patematika">
-                    <label for="matematika">Matematika</label>
+                <div class="form-group">
+                    <label for="kelas_id">Class</label>
+                    <input type="text" name="kelas_input" id="kelas_id" required>
                 </div>
-                <div>
-                    <input type="checkbox" name="hobi_input" id="olahraga" value="olahraga">
-                    <label for="olahraga">Olahraga</label>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <input type="radio" name="jk_input" id="pria" value="Pria" required>
+                        <label for="pria">Male</label>
+                        <input type="radio" name="jk_input" id="wanita" value="Wanita">
+                        <label for="wanita">Female</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" name="hobi_input" id="seni" value="seni">
-                    <label for="seni">Seni</label>
+                <div class="form-group">
+                    <label for="ttl">Place of Birth</label>
+                    <select name="ttl" id="ttl" required>
+                        <option value="">Select city</option>
+                        <option value="bdg">Bandung</option>
+                        <option value="jkt">Jakarta</option>
+                        <option value="solo">Solo</option>
+                        <option value="ikn">IKN</option>
+                    </select>
                 </div>
-                <div>
-                    <input type="checkbox" name="hobi_input" id="bahasa" value="bahasa">
-                    <label for="bahasa">Bahasa</label>
+                <div class="form-group">
+                    <label for="birthday">Date of Birth</label>
+                    <input type="date" id="birthday" name="birthday" required>
                 </div>
-            </td>
-        </tr>
-<tr>
-    <td>
-        <div class="form-group">
-            <label for="alamat">Alamat</label>
+                <div class="form-group">
+                    <label>Interests</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="hobi_input" id="programming" value="programming">
+                        <label for="programming">Programming</label>
+                        <input type="checkbox" name="hobi_input" id="matematika" value="matematika">
+                        <label for="matematika">Mathematics</label>
+                        <input type="checkbox" name="hobi_input" id="olahraga" value="olahraga">
+                        <label for="olahraga">Sports</label>
+                        <input type="checkbox" name="hobi_input" id="seni" value="seni">
+                        <label for="seni">Arts</label>
+                        <input type="checkbox" name="hobi_input" id="bahasa" value="bahasa">
+                        <label for="bahasa">Languages</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Address</label>
+                    <textarea id="alamat" name="alamat" rows="4" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-simpan">Save</button>
+                </div>
+            </form>
         </div>
-    </td>
-    <td>
-        <textarea id="alamat" name="alamat" rows="5"></textarea>
-    </td>
-</tr>
-</table>
-<div class="form-actions">
-<button type="simpan" class="btn-simpan">Simpan</button>
-</div>
-</form>
+    </div>
 </body>
 </html>
